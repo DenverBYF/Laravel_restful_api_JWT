@@ -1,0 +1,22 @@
+
+                                                           
+  [Symfony\Component\Debug\Exception\FatalThrowableError]  
+  Parse error: syntax error, unexpected '}'                
+                                                           
+
+
+                                                           
+  [Symfony\Component\Debug\Exception\FatalThrowableError]  
+  Parse error: syntax error, unexpected '}'                
+                                                           
+
+Laravel development server started: <http://127.0.0.1:8000>
+[Mon Aug 21 21:05:18 2017] 127.0.0.1:63244 [200]: /favicon.ico
+[Mon Aug 21 21:10:22 2017] 127.0.0.1:63246 Invalid request (Unexpected EOF)
+[Mon Aug 21 21:11:53 2017] 127.0.0.1:63338 [200]: /favicon.ico
+[Mon Aug 21 21:12:03 2017] 127.0.0.1:63345 [200]: /favicon.ico
+[Mon Aug 21 21:12:23 2017] 127.0.0.1:63346 Invalid request (Unexpected EOF)
+[Mon Aug 21 21:12:23 2017] 127.0.0.1:63352 [200]: /favicon.ico
+[Mon Aug 21 21:12:29 2017] 127.0.0.1:63355 [200]: /favicon.ico
+[Mon Aug 21 21:12:33 2017] 127.0.0.1:63359 [200]: /favicon.ico
+[Mon Aug 21 21:14:37 2017] 127.0.0.1:63361 Invalid request (Unexpected EOF)
