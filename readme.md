@@ -10,7 +10,7 @@
 ## install and config
 * run `composer install`
 * config the **.env** config your own mysql info  
-![](file:///Users/denverb/Desktop/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-08-22%20%E4%B8%8B%E5%8D%883.53.17.png)  
+![](https://github.com/DenverBYF/Laravel_restful_api_JWT/raw/master/Screenshots/1.png)  
 * run `php artisan migrate` to bulid database  
 * run `php artisan db:seed` to Generate test data  
 * run `php artisan serve` to start it  
@@ -27,7 +27,7 @@ method: post
 param: email,password  
 response: json(token,message,status_code)  
 3. restfulApi(use these api should add the token in header first)  
-![](file:///Users/denverb/Desktop/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-08-22%20%E4%B8%8B%E5%8D%884.25.58.png)  
+![](https://github.com/DenverBYF/Laravel_restful_api_JWT/raw/master/Screenshots/2.png)  
 url: hostname/api/user/  
 method: get,post,put,delete  
 4. change code to meet your own needs  
