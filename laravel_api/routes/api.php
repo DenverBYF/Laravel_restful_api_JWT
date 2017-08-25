@@ -19,6 +19,7 @@ $api->version('v1', function ($api) {
 	$api->post('register', 'App\Http\Api\Auth\RegisterController@register');
 	$api->group(['middleware'=>'api.auth'],function($api){
 		$api->get('logout','App\Http\Api\Auth\LoginController@logout');
+		$api->get('refresh','App\Http\Api\UsersController@refresh');
 		$api->resource('user','App\Http\Api\UsersController');
 	});
 });

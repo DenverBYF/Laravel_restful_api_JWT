@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Dingo\Api\Routing\Helpers;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
+use Tymon\JWTAuth\Facades\JWTAuth;
 use App\Test;
 
 class UsersController extends Controller
@@ -145,5 +146,15 @@ class UsersController extends Controller
     protected function sendFailResponse($message,$status_code)
     {
         return $this->response->error($message,$status_code);
+    }
+    public function refresh()
+    {
+        $old_token=JWTAuth::gettoken();
+        $new_token=JWTAuth::refresh($old_token);
+        JWTAuth::invalidate($old_token);
+        return $this->response->array([
+                'token'=>$new_token,
+                'status_code'=>201
+            ]);
     }
 }
